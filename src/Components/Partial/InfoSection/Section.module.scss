@@ -1,0 +1,38 @@
+#container {
+    color: #fff;
+    padding: 5rem 0;
+
+    > article {
+        width: 70%;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+        }
+
+        > section {
+            display: flex;
+
+            > * {
+                width: 50%;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            a {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+}

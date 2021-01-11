@@ -1,0 +1,95 @@
+#container {
+    background-image: url("/assets/img/Bg-Tile-Blue-Dark.png");
+    color: #fff;
+    padding: 1rem 0;
+
+    section {
+        width: 70%;
+        max-width: 1200px;
+        margin: auto;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+
+            > article {
+                width: 49%;
+
+                h3 {
+                    font-size: 30px;
+                    margin: 0.5rem 0;
+                }
+
+                p, a {
+                    color: #fff;
+                    font-size: 20px;
+                    margin: 0;
+                    text-decoration: none;
+                }
+
+                img {
+                    max-width: 100%;
+                    padding:   0.5rem 0;
+                }
+
+                .url {
+                    text-decoration: underline;
+                }
+
+                form {
+                    
+                    input {
+                        border: none;
+                        background-color: #8fa7bf;
+                        color: #fff;
+                        padding: 0.5rem;
+                        margin-top: 0.5rem;
+                        width: 100%;
+                        box-sizing: border-box;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::-webkit-input-placeholder {
+                            color: #fff;
+                        }
+                    }
+
+                    label {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 0.5rem;
+                        cursor: pointer;
+                        margin-right: 0.25rem;
+
+                        &::after {
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            box-shadow: 0 0 0 0.25rem #8fa7bf;
+                            background: #8fa7bf;
+                            content: "";
+                        }
+
+                        &.checked::after {
+                            background: #bbbf8f;
+                        }
+                    }
+
+                    #call, #mail {
+                        display: none;
+                    }
+
+                    .button {
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #bbbf8f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#container {
+    position: relative;
+
+    > img {
+        width: 100%;
+        display: block;
+    }
+
+    div {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+
+        img {
+            max-width: 50%;
+        }
+    }
+
+    article {
+        position: absolute;
+        right: 5%;
+        top: 45%;
+
+        p {
+            max-width: 60%;
+            margin-left: auto;
+            text-align: right;
+            font-size: 40px;
+            color: #8fa7bf;
+            font-style: italic;
+        }
+    }
+}
